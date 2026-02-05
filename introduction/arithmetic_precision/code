@@ -1,0 +1,17 @@
+#include <iostream>
+#include <iomanip>
+
+double convertToEuro(double dollars)
+{
+    const double rate = 0.94;
+    double euros = dollars * rate;
+    std::cout << std::fixed << std::setprecision(2);
+    return euros;
+}
+
+int main()
+{
+    double result = convertToEuro(50.0);
+    std::cout << result;
+    return 0;
+}
